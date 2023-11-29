@@ -128,7 +128,7 @@ def calculate_bmi():
         run_g_c_bilgisi.font.size = Pt(14)
 
         # Değişiklikleri kaydedin
-        diyet.save('c:\\Users\\EXCALIBUR\\Desktop\\' + str(ad_soyad) + ".docx")
+        diyet.save(str(ad_soyad) + ".docx")
 
         # EXCEL Dosyasına kaydetme:
         kisi_kontrol = str(sonraki_zaman.strftime("%m/%d/%Y"))
