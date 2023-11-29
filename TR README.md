@@ -1,35 +1,35 @@
-# Diet List Preparation Bot
+# Diyet Listesi Hazırlama Botu
 
-This Python program is used by dietitians to prepare special diet lists for their clients. The program finds and creates the most appropriate diet list based on the client's height, weight, age and number of meals and saves it to a file with the specified information.
+Bu Python programı, diyetisyenler tarafından müşterileri için özel diyet listeleri hazırlamak için kullanılır. Program danışanın boyuna, kilosuna, yaşına ve öğün sayısına göre en uygun diyet listesini bulup oluşturur ve belirtilen bilgilerle birlikte bir dosyaya kaydeder.
 
-## Usage
+## Kullanım
 
-The program uses a user interface. After entering the client's name, number of meals, weight, height and age, the user starts the process by clicking the "Calculate" button.
+Program bir kullanıcı arayüzü kullanmaktadır. Müşterinin adını, öğün sayısını, kilosunu, boyunu ve yaşını girdikten sonra, kullanıcı "Hesapla" düğmesine tıklayarak işlemi başlatır.
 
-### Required Libraries
+### Gerekli Kütüphaneler
 
-- `tkinter`: To create a user interface.
-- `openpyxl`: For manipulating Excel files.
-- `random`: To generate random values.
-- `os`: For file operations and operating system operations.
-- `datetime`: For date and time operations.
-- `docx`: For creating and editing Word files.
+- `tkinter`: Bir kullanıcı arayüzü oluşturmak için.
+- `openpyxl`: Excel dosyalarını manipüle etmek için.
+- `random`: Rastgele değerler üretmek için.
+- os`: Dosya işlemleri ve işletim sistemi işlemleri için.
+- `datetime`: Tarih ve saat işlemleri için.
+- `docx`: Word dosyaları oluşturmak ve düzenlemek için.
 
-## How to Use
+## Nasıl Kullanılır
 
-1. Run the program.
-2. Enter the client's name, number of meals, weight, height and age.
-3. Click on the "Calculate" button.
-4. The program generates the appropriate diet list for the client and saves it to the file.
+1. Programı çalıştırın.
+2. Müşterinin adını, öğün sayısını, kilosunu, boyunu ve yaşını girin.
+3. "Hesapla" düğmesine tıklayın.
+4. Program müşteri için uygun diyet listesini oluşturur ve dosyaya kaydeder.
 
-## Developer Notes
+## Geliştirici Notları
 
-For this program to work, there must be predetermined diet lists. These lists should be divided into folders according to the number of meals and named according to a specific order.
+Bu programın çalışması için önceden belirlenmiş diyet listeleri olmalıdır. Bu listeler öğün sayısına göre klasörlere ayrılmalı ve belirli bir düzene göre isimlendirilmelidir.
 
-My project includes a Python program that I wrote to make it easier for dietitians to prepare special diet lists for their clients. This program makes fine calculations based on the user's height, weight, age, and number of meals, and selects the most appropriate one among the pre-created diet lists and saves it in the diet file where the client's information is saved.
+Projem, diyetisyenlerin müşterileri için özel diyet listeleri hazırlamalarını kolaylaştırmak için yazdığım bir Python programını içeriyor. Bu program kullanıcının boyuna, kilosuna, yaşına ve öğün sayısına göre ince hesaplamalar yapıyor ve önceden oluşturulmuş diyet listeleri arasından en uygun olanını seçerek danışanın bilgilerinin kayıtlı olduğu diyet dosyasına kaydediyor.
 
-For the program to work, there must be predetermined weekly diet lists. These lists will be divided into two classes according to the number of meals: 2-meal and 3-meal. Within each class, there will be folders for each for at least 2 months. Each month's folder name will include folders containing BMI classes: 21-25 BMI, 26-29 BMI, 30-33 BMI, 34-37 BMI and above. Within these folders, there will be 4 different weekly diet lists.
+Programın çalışabilmesi için önceden belirlenmiş haftalık diyet listelerinin olması gerekmektedir. Bu listeler öğün sayısına göre 2 öğün ve 3 öğün olmak üzere iki sınıfa ayrılacaktır. Her sınıf içinde, her biri için en az 2 aylık klasörler olacaktır. Her ayın klasör adı BMI sınıflarını içeren klasörleri içerecektir: 21-25 BMI, 26-29 BMI, 30-33 BMI, 34-37 BMI ve üstü. Bu klasörler içerisinde 4 farklı haftalık diyet listesi bulunacaktır.
 
-For example, the folder sequence will be as follows: DIETS\THREE_MEAL_DIETS\AY2\21_25bmi\1.week.docx or DIETS\TWO_MEAL_DIETS\AY2\26_29bmi\4.week.docx.
+Örneğin, klasör sıralaması aşağıdaki gibi olacaktır: DIETS\THREE_MEAL_DIETS\AY2\21_25bmi\1.hafta.docx veya DIETS\TWO_MEAL_DIETS\AY2\26_29bmi\4.hafta.docx.
 
-After the diet lists are prepared, the program finds the most appropriate diet according to the client information entered, creates and saves the list with the client's information.
+Diyet listeleri hazırlandıktan sonra program girilen danışan bilgilerine göre en uygun diyeti bulur, danışanın bilgileriyle birlikte listeyi oluşturur ve kaydeder.
